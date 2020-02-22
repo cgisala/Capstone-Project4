@@ -4,9 +4,7 @@ from datetime import datetime
 import os
 
 db = os.path.join('database', 'travel_app.db')
-# key = os.environ.get('WEATHER_KEY') #Uers must provide their own API key
-key = '931ff5eff05bb2caa4f58e70a64f78bb' # Only use for practice
-
+key = os.environ.get('WEATHER_KEY') #Uers must provide their own API key
 
 class CurrentWeather():
     # This class deals with the current weather 
